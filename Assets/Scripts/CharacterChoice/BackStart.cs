@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class BackStart : MonoBehaviour
 {
-    public int character = 0;
+    public int character;
 
     public void BackStartScene1()
     {
