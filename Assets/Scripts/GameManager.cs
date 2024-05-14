@@ -19,11 +19,18 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         GetCurrentDate();
+        ChangeName();
     }
 
     private void GetCurrentDate()
     {
         string DayTime = DateTime.Now.ToString("T");
         time.text = DayTime;
+    }
+
+    private void ChangeName()
+    {
+        string playerName = PlayerPrefs.GetString("Name");
+        textName.text = playerName;
     }
 }
